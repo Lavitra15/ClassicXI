@@ -80,6 +80,12 @@ for all players in the dataset:
     Recent_Score = Mean of wickets taken in M recent matches by a player
 
 end for
+
+for all players in the dataset:
+    Overall_Career_Score = Overall_Career_Score / max(Overall_Career_Score)
+    Recent_Score = Recent_Score / max(Recent_Score)
+    Bowler Rating = (0.7 x Overall_Career_Score) + (0.3 x Recent_Score)
+end for
 ```
 
 

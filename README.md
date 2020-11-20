@@ -8,8 +8,8 @@ This repo is for the Semester 5 Project for the course UE18CS312: Data Analytics
 
 ### I. Modelling Batsmen
 
-Input: Players data from IPL 2008 to 2019 seasons, IPL Career Stats
-Output: Batsman Rating
+**Input**: Players data from IPL 2008 to 2019 seasons, IPL Career Stats  
+**Output**: Batsman Rating
 
 #### Features for the Batsman model:
 
@@ -48,7 +48,7 @@ end for
 
 ### II. Modelling Bowler
 
-**Input**: Players data from IPL 2008 to 2019 seasons, IPL Career Stats
+**Input**: Players data from IPL 2008 to 2019 seasons, IPL Career Stats  
 **Output**: Bowler Rating
 
 #### Features for the Bowler model:

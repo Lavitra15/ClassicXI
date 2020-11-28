@@ -51,7 +51,7 @@ for all players in the dataset:
     Batsman Rating = (0.4 x Overall_Career_Score) + (0.6 x Recent_Score)
 end for
 
-Min Max Normalise( Batsman Rating )
+Min Max Normalise( Batsman Rating ) X 100
 ```
 
 ### II. Modelling Bowler
@@ -101,6 +101,7 @@ for all players in the dataset:
     Recent_Score = Recent_Score / max(Recent_Score)
     Bowler Rating = (0.35 x Overall_Career_Score) + (0.65 x Recent_Score)
 end for
+
 Min Max Normalise( Bowler Rating ) x 100
 ```
 

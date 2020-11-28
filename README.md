@@ -41,7 +41,7 @@ for all players in the dataset:
     matches = Number of innings batted in (Min Max Normalization)
     achievement_weight = (15 x Hundreds) + (5 x Fifties)
     career_stat_score = (0.3 x achievement_weight) + (0.55 x Batsman Average) + (0.15 x Strike Rate)
-    Overall_Career_Score = (matches x career_stat_score)
+    Recent_Score = (matches x career_stat_score)
 
 end for
 
@@ -92,7 +92,7 @@ for all players in the recent form dataset:
     wicket_weight = (30 x 5_wicket_haul) + (20 x 4_wicket_haul) + (10 x Wickets_Taken)
     achievement_weight = (5 x Maiden_Overs) + dot_balls
     stat_score = (Bowling Average) + (Bowling Economy) + (1 / 1 + achievement_weight)
-    Overall_Recent_Score = (matches x wicket_weight) / (stat_score) 
+    Recent_Score = (matches x wicket_weight) / (stat_score) 
     
 end for
 

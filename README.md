@@ -2,7 +2,37 @@
 
 This repo is for the Semester 5 Project for the course UE18CS312: Data Analytics
 
+## ClassicXI – Optimal IPL Team Selection based on Player Rating and Venue Based Analysis
+
 ## Abstract
+
+Indian Premier League (IPL) is one of the
+most prestigious T20 cricket tournaments across the world.
+This paper focuses on suggesting the playing XI squad given
+a squad of 15 players. We propose a model that rates all the
+players in the IPL and based on their predicted rating
+suggests the best playing XI combination the team can select
+for a given match at a given venue. Our model experiments
+with various distance similarity measures and other statistics
+to provide the best possible playing XI. It also provides
+insights on toss decision at a given venue based on history.
+
+## Setup
+
+### Dependencies
+Make sure you have `numpy`, `pandas`, `pandasql`, `json`, `sklearn` and `matplotlib` of the latest versions installed.\
+If not,
+`pip install <library_name>`
+or
+`conda install <library_name>` after `conda update conda`
+
+### Running the program 
+
+1. Copy the DA_Project.ipynb and all the 3 datasets into a folder and then,\
+`cd` into that folder\
+Run `jupyter notebook` and open the file DA_Project.ipynb
+
+2. Run all cells. It should take around 5 minutes to finish running all the cells.
 
 ## Rating Algorithms
 
@@ -18,8 +48,7 @@ This repo is for the Semester 5 Project for the course UE18CS312: Data Analytics
 3. Strike Rate
 4. Fifties
 5. Hundreds
-6. Number of Not outs
-7. Number of 4s and 6s
+6. Number of 4s and 6s
 
 #### Algorithm
 
@@ -28,7 +57,7 @@ for all players in the dataset:
     
     // All time Form ( IPL 2008 to 2019 )
     matches = Number of innings batted in (Min Max Normalization)
-    achievement_weight = (15 x Hundreds) + (5 x Fifties)
+    achievement_weight = (20 x Hundreds) + (10 x Fifties) + (3 x sixes) + Fours
     career_stat_score = (0.3 x achievement_weight) + (0.55 x Batsman Average) + (0.15 x Strike Rate)
     Overall_Career_Score = (matches x career_stat_score)
 
@@ -39,9 +68,9 @@ for all players in the dataset:
     
     // Recent Form ( IPL 2018 to 2019 )
     matches = Number of innings batted in (Min Max Normalization)
-    achievement_weight = (15 x Hundreds) + (5 x Fifties)
-    career_stat_score = (0.3 x achievement_weight) + (0.55 x Batsman Average) + (0.15 x Strike Rate)
-    Recent_Score = (matches x career_stat_score)
+    achievement_weight = (20 x Hundreds) + (10 x Fifties) + (3 x sixes) + Fours
+    stat_score = (0.3 x achievement_weight) + (0.55 x Batsman Average) + (0.15 x Strike Rate)
+    Recent_Score = (matches x stat_score)
 
 end for
 
@@ -61,15 +90,14 @@ Min Max Normalise( Batsman Rating ) X 100
 
 #### Features for the Bowler model:
 
-1. Number of Innings
+1. Matches - Number of Innings
 2. Bowling Economy
 3. Bowling Average
-4. Bowling Strike Rate
-5. 4 wicket Hauls
-6. 5 wicket Hauls
-7. Wickets Taken
-8. Maiden overs
-9. Number of dot balls
+4. 4 wicket Hauls
+5. 5 wicket Hauls
+6. Wickets Taken
+7. Maiden overs
+8. Number of dot balls
 
 #### Algorithm
 

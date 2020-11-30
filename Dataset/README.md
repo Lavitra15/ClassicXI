@@ -2,13 +2,13 @@
 
 One of the datasets used in this project is taken from the
 Kaggle [source](https://www.kaggle.com/nowke9/ipldata). This consists of two .csv files deliveries.csv and
-`matches.csv`.\
+`matches.csv`.
 
 The file `deliveries.csv` contains the ball by
 ball data of every match since 2008. Data includes
 columns such as bowling team, batting team, over, ball,
 batsman etc. This dataset has a total of 21 columns and
-179078 rows. \
+179078 rows. 
 
 The file `matches.csv` contains details about
 the match as a whole. Data includes columns such as

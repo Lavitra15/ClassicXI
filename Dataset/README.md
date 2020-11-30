@@ -19,7 +19,11 @@ The second dataset used was obtained from the official
 This dataset consists of the playing XI
 details for every match that has been played in the IPL
 from 2008 to 2020 and also includes the respective player
-stats such as the player’s full and short name, date of
+stats such as the player’s full and short name, date of birth, nationality and their skillset. The winner, score of
+both teams and date of every match was also obtained.
+This dataset consisting of 167422 lines of data was
+extracted in JSON format and was converted into a
+Dataframe.
 
 ## Running the Scraper (Incase you are interested on how to run it)
 

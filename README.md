@@ -7,6 +7,7 @@ This repo is for the Semester 5 Project for the course UE18CS312: Data Analytics
 The final report for this project can be found [here](https://github.com/Lavitra15/DataAnalytics-Project/blob/main/065_Praxis-FinalReport.pdf)\
 The plagiarism check report (6%) for this project can be found [here](https://github.com/Lavitra15/DataAnalytics-Project/blob/main/065_Praxis-PlagCheck.pdf)\
 The stage1 report can be found [here](https://github.com/Lavitra15/DataAnalytics-Project/blob/main/65_Praxis-Stage1.pdf)
+Datasets used can be found here [here](https://github.com/Lavitra15/DataAnalytics-Project/tree/main/Dataset)
 
 ## Abstract
 
